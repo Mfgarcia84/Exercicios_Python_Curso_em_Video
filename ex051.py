@@ -2,16 +2,14 @@
 #primeiros termos dessa progressão.
 
 # an = termo + razao * (termo_n - 1)
-
+print('-='*7,'TERMOS DA PA','-='*7)
 termo = int(input('Qual o primeiro termo da PA? '))
 razao = int(input('Qual a razão da PA? '))
 n = int(input('Até qual termo você deseja ver? '))
 for tn in range(1, n+1):
     termos_razao = termo + razao * (tn - 1)
-
-print(termos_razao,end=' ')
-
-
+    print(termos_razao,'->',end=' ')
+print('FIM')
 
 
 # termo = int(input('Digite o primeiro termo da PA: '))

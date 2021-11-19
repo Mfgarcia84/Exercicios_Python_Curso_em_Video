@@ -2,15 +2,17 @@
 #no intervalo de 1 até 500.
 
 #somador: s = s + 0
+cont = 0
 sum = 0
 init_int = int(input('Digite o início do intervalo: '))
 end_int = int(input('Digite o fim do intervalo: '))
 for c in range(init_int, end_int+1):
     if c % 2 != 0 and c % 3 == 0: #atende a condição de ímpar e é múltiplo de 3
         sum = sum + c
-        print(c,end=' ')
+        cont = cont + 1
+        #print(c,end=' ')
 print('\n'+'A soma dos números ímpares múltiplos de 3 do intervalo é {}.'.format(sum))
-
+print('Existem {} números dentro do intervalo que atende a premissa.'.format(cont))
 
 # primeiro = int(input('Digite o primeiro número do intervalo: '))
 # ultimo = int(input('Digite o último número do intervalo: '))
