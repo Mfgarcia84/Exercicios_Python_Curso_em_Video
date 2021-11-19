@@ -1,7 +1,9 @@
 #Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10
 #primeiros termos dessa progressão.
-
 # an = termo + razao * (termo_n - 1)
+
+#resolução
+
 print('-='*7,'TERMOS DA PA','-='*7)
 termo = int(input('Qual o primeiro termo da PA? '))
 razao = int(input('Qual a razão da PA? '))
