@@ -1,6 +1,6 @@
 #Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício,
 #indo de 10 até 0, com uma pausa de 1 segundo entre eles.
-
+#resolução:
 import emoji
 import time
 for c in range(10, 0, -1):
@@ -8,7 +8,6 @@ for c in range(10, 0, -1):
     time.sleep(1)
 print('-='*5,'FELIZ ANO NOVO','-='*5)
 print(emoji.emojize(':stuck_out_tongue_closed_eyes:'*20,use_aliases=True))
-
 
 # import emoji
 # from time import sleep
