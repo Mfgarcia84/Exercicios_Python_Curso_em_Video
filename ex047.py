@@ -1,6 +1,6 @@
 #Crie um programa que mostre todos os números pares que estão no intervalo entre 1 e 50.
 
-
+#resolução
 print('-='*17)
 print('NÚMEROS PARES ENTRE UM INTERVALO')
 print('-='*17)
