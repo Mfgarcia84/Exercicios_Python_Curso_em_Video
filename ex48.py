@@ -1,7 +1,7 @@
 #Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram
 #no intervalo de 1 até 500.
-
 #somador: s = s + 0
+
 cont = 0
 sum = 0
 init_int = int(input('Digite o início do intervalo: '))
