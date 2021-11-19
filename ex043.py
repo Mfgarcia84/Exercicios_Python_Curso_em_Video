@@ -6,6 +6,7 @@
 #30 até 40: obesidade
 #acima de 40: obseidade mórbida
 
+
 peso = float(input('Digite o peso: (kg) '))
 altura = float(input('Digite a altura: (m) '))
 IMC = peso / (altura**2)
