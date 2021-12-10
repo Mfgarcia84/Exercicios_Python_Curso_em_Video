@@ -2,6 +2,10 @@
 digitar o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi
 a soma entre eles (desconsiderando o flag, ou seja, não considerar o 999 na soma)'''
 
+
+
+
+
 encerrar = False
 soma = 0
 cont = 0

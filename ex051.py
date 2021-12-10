@@ -2,6 +2,15 @@
 #primeiros termos dessa progressão.
 # an = termo + razao * (termo_n - 1)
 
+
+
+
+
+
+
+
+
+
 #resolução
 
 print('-='*7,'TERMOS DA PA','-='*7)

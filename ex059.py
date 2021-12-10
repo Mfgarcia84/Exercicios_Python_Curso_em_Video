@@ -6,7 +6,57 @@
 [5] sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso'''
 
-import time
+
+
+n1 = float(input('Digite o primeiro número: '))
+n2 = float(input('Digite o segundo número: '))
+encerrar = False
+while not encerrar:
+        print('Qual operação você deseja realizar com estes números? \n[1] SOMAR\n[2] MULTIPLICAR\n[3] MAIOR\n[4] NOVOS NÚMEROS\n[5] SAIR')
+        operacao = int(input('Digite a opção desejada: '))
+        if operacao == 1:
+            soma = n1 + n2
+            print('A soma entre {} e {} é {}.'.format(n1, n2, soma))
+        elif operacao == 2:
+            multiplicacao = n1 * n2
+            print('A multiplicação entre {} e {} é {}.'.format(n1, n2, multiplicacao))
+        elif operacao == 3:
+            if n1 > n2:
+                print('O maior número entre {} e {} é {}.'.format(n1, n2, n1))
+            if n2 > n1:
+                print('O maior número entre {} e {} é {}.'.format(n1, n2, n2))
+            if n2 == n1:
+                print('O números {} e {} são iguais.'.format(n1, n2))
+        elif operacao == 4:
+            n1 = float(input('Digite o primeiro número: '))
+            n2 = float(input('Digite o segundo número: '))
+        elif operacao == 5:
+            encerrar = True
+        else:
+            print('Opção inválida. Digite uma opção de 1 a 5.')
+print('FIM')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''import time
 n1 = int(input('Digite o primeiro número: '))
 n2 = int(input('Digite o segundo número: '))
 sair = False
@@ -33,7 +83,7 @@ while not sair:
         print('Opção inválida! Digite uma das opções.')
 print('Finalizando...')
 time.sleep(2)
-print('FIM')
+print('FIM')'''
 
 # import time
 # n1 = int(input('Digite um número: '))

@@ -1,6 +1,18 @@
 '''Faça um programa que leia um número qualquer e mostre seu fatorial
 ex: 5!=5x4x3x2x1=120'''
-import math
+
+from math import factorial
+num = int(input('Digite um número: '))
+c = num
+while c >= 1:
+    print(c, 'x' if c > 1 else '=', sep='', end='')
+    c = c - 1
+print(factorial(num))
+
+
+
+
+'''import math
 num = int(input('Digite um número: '))
 c = num
 while c > 0: # solução com WHILE
@@ -8,7 +20,7 @@ while c > 0: # solução com WHILE
     print('x' if c > 1 else '=',end='')
     c = c -1
 f = math.factorial(num)
-print(f)
+print(f)'''
 
 
 # num = int(input('Digite um número: ')) # solução com FOR
