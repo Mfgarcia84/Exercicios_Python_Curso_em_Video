@@ -2,29 +2,23 @@
 quando ele disser que quer mostrar 0 termos'''
 #an = termo + razao * (termo_n - 1)
 
-
-
-
-
-
-
-
-
-
-
-
-'''primeiro_termo = int(input('Digite o primeiro termo da PA: '))
+primeiro_termo = int(input('Digite o primeiro termo da PA: '))
 razao = int(input('Digite a razão da PA: '))
-enesimo_termo = int(input('Até qual termo da razão você deseja mostrar? '))
-while enesimo_termo != 0:
-    cont = 1
-    while cont <= enesimo_termo:
-        print('{}->'.format(primeiro_termo),end=' ')
+enesimo_termo = int(input('Digite o enésimo termo da PA: '))
+print('O {} primeiros termos da PA são:'.format(enesimo_termo))
+encerrar = False
+while not encerrar:
+    c = enesimo_termo
+    while c >= 1:
+        print(primeiro_termo, end=' ')
         primeiro_termo = primeiro_termo + razao
-        cont = cont + 1
-    print('PAUSA')
-    enesimo_termo = int(input('Deseja mostrar mais quantos termos? '))
-print('FIM')'''
+        c = c - 1
+    enesimo_termo = int(input('\nDeseja mostrar mais quantos termos? '))
+    if enesimo_termo > 0:
+        encerrar = False
+    if enesimo_termo == 0:
+        encerrar = True
+print('FIM')
 
 
 
@@ -34,18 +28,14 @@ print('FIM')'''
 
 
 
-# primeiro_termo = int(input('Digite o primeiro termo da PA: '))
-# razao = int(input('Digite a razão da PA: '))
-# enesimo_termo = int(input('Informe até qual termo deseja ver: '))
-# while enesimo_termo != 0:
-#     c = 1
-#     while c <= enesimo_termo:
-#         print('{} ->'.format(primeiro_termo),end=' ')
-#         primeiro_termo = primeiro_termo + razao
-#         c = c + 1
-#     print('PAUSA...')
-#     enesimo_termo = int(input('Deseja mostrar mais quantos termos? '))
-# print('FIM')
+
+
+
+
+
+
+
+
 
 
 

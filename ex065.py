@@ -3,19 +3,35 @@ entre todos os valores e qual foi o maior e o menor valor lido. O programa deve 
 se ele quer ou não continuar a digitar valores'''
 
 
+s = 0
+c = 0
 encerrar = False
-soma = 0
-cont = 0
 while not encerrar:
     num = int(input('Digite um número: '))
-    soma = soma + num
-    cont = cont + 1
-    novos_valores = (str(input('Deseja digitar mais números? [S/N] '))).replace(' ','').upper()
-    if novos_valores == 'S':
+    c = c + 1
+    s = s + num
+    if c == 1:
+        maior = num
+        menor = num
+    elif c > 1:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+    novo_num = str(input('Deseja digitar mais números? [S/N] '))
+    if novo_num == 'S':
         encerrar = False
-    if novos_valores == 'N':
+    elif novo_num == 'N':
         encerrar = True
-    if novos_valores not in 'SN':
-        Print('Opção inválida.')
-media = soma / cont
-print('A média dos {} números digitados é {:.2f}.'.format(cont, media))
+    else:
+        sair = False
+        while not sair:
+            print('Opção inválida.')
+            novo_num = str(input('Deseja digitar mais números? [S/N] '))
+            if novo_num not in 'SN':
+                sair = False
+            else:
+                sair = True
+media = s / c
+print('A média dos {} números digitados é {:.2f}'.format(c, media))
+print('O maior número digitado foi {} e o menor foi {}.'.format(maior, menor))
