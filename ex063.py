@@ -2,6 +2,7 @@
 elementos de uma sequência de Fibonacci
 Ex: 0 -> 1 -> 1 -> 2 -> 3 -> 5 -> 8'''
 
+
 termos = int(input('Informe a quantidade de termos: '))
 c = 3
 t1 = 0

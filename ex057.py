@@ -1,26 +1,21 @@
-'''ex057: Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a
+'''Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a
 digitação novamente até ter um valor correto'''
 
-c = False
-while not c:
-    sexo = str(input('Informe o sexo: [M/F] '))
+#minha solução
+encerrar = False
+while not encerrar:
+    sexo = str(input('Informe o sexo: [M/F] ')).replace(' ','').upper()[0]
     if sexo == 'M' or sexo == 'F':
-        c = True
+        encerrar = True
     else:
-        print('Opção inválida. Informe o sexo corretamente.')
-print('O sexo é {}.'.format(sexo))
+        print('Opção inválida. Tente outra vez.')
+print('O sexo escolhido foi o "Masculino".' if sexo == 'M' else 'O sexo escolhido foi o "Feminino".')
 
 
-'''sexo = str(input('Informe seu sexo: ')).replace(' ','').upper()
-while sexo not in 'MF':
-    sexo = str(input('Dados inválidos. Por favor informe seu sexo: ')).replace(' ','').upper()
-print('O sexo é: {}'.format(sexo))'''
+#solução aula
+'''sexo = str(input('Digite seu sexo: [M/F] ')).replace(' ','').upper()[0]
+while sexo not in 'MmFf':
+    sexo = str(input('Opção inválida. Digite o sexo: '))
+print('Sexo Masculino cadastrado com sucesso' if sexo in 'Mm' else 'Sexo Feminino cadastrado com sucesso.')'''
 
 
-# sexo = str(input('Informe o sexo: '))
-# while sexo != 'M' and sexo != 'F': #while sexo in 'MmFf':
-#     sexo = str(input('Dados inválidos. Por favor informe o sexo novamente: [M/F] '))
-# if sexo == 'M':
-#     print('A pessoa é do sexo Masculino.')
-# else:
-#     print('A pessoa é do sexo Feminino.')

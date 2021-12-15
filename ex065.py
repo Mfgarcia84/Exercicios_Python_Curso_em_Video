@@ -2,8 +2,30 @@
 entre todos os valores e qual foi o maior e o menor valor lido. O programa deve perguntar ao usuário
 se ele quer ou não continuar a digitar valores'''
 
+#solução da aula
+cont = soma = 0
+resposta = 'S'
+while resposta in 'S':
+    num = int(input('Digite um número: '))
+    cont = cont + 1
+    soma = soma + num
+    resposta = str(input('Deseja digitar outro número? [S/N]')).replace(' ','').upper()[0]
+    if cont == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+media = soma / cont
+print('A média dos números digitados é {:.2f}'.format(media))
+print('O maior número digitado foi {} e o menor foi {}.'.format(maior, menor))
 
-s = 0
+
+
+
+#minha solução
+'''s = 0
 c = 0
 encerrar = False
 while not encerrar:
@@ -33,5 +55,10 @@ while not encerrar:
             else:
                 sair = True
 media = s / c
+print('~'*50)
 print('A média dos {} números digitados é {:.2f}'.format(c, media))
 print('O maior número digitado foi {} e o menor foi {}.'.format(maior, menor))
+print('~'*50)'''
+
+
+
