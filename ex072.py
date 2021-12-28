@@ -5,5 +5,8 @@ lista = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito
 'Quatorze', 'Quinze', 'Dezesseis', 'Dezesete', 'Dezoito', 'Dezenove', 'Vinte')
 
 num = int(input('Digite um número entre 0 e 20: '))
+while num < 0 or num > 20:
+    print('Número inválido. Digite um número entre 0 e 20: ')
+    num = int(input('Digite um número entre 0 e 20: '))
 num_escolhido = lista[num]
 print(f'Você escolheu o número "{num_escolhido}"')
