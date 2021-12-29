@@ -6,7 +6,7 @@ lista = ('Cerveja', 'Tabaco', 'Cigarro', 'Mesa', 'Escola', 'Python', 'Futebol', 
 
 
 for palavra in lista:
-    print(f'\nNa palavra {palavra} temos', end=' ')
+    print(f'\nNa palavra {palavra.upper()} temos', end=' ')
     for letra in palavra:
         if letra in 'AaEeIiOoUu':
             print(letra, end=' ')
