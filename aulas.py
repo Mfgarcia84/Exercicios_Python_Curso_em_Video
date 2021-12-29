@@ -1,3 +1,5 @@
+
+#TUPLAS
 '''lanche = ('hamburguer', 'suco', 'pizza', 'pudim') #tupla começa com '()'
 lista_ordenada = sorted(lanche) #ordena a lista (nesse caso em ordem alfabética)
 print(lanche)
@@ -20,4 +22,6 @@ b = (5, 8, 1, 2)
 c = a + b
 print(c)
 print(c.index(8)) # em que posição está o número 8 na tupla c (retorna a posição da primeira aparição)?'''
+
+#LISTAS
 
