@@ -1,7 +1,7 @@
 """Crie um programa onde o usuário possa digitar cinco valores numéricos e cadastre-os em uma lista, 
 já na posição correta de inserção (sem usar o sort()). No final, mostre a lista ordenanda na tela.
 """
-
+# solução da aula
 lista_num = list()
 for c in range(5):
     num = int(input(f"Digite o {c+1}º número: "))
