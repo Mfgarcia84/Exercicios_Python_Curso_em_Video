@@ -19,17 +19,15 @@ while True:
         resposta = str(input("Quer continuar? [S/N] ")).upper()[0]
     if resposta == "N":
         break
-mais_pesado = mais_leve = 0
-for p in pessoas:
-    if p == 0:  # erro aqui
-        mais_pesado = mais_leve = p[1]
-    elif p[1] > mais_pesado:
-        mais_pesado = p[1]
-        nome_pesado = p[0]
-    elif p[1] < mais_leve:
-        mais_leve = p[1]
-        nome_leve = p[0]
+
+for c in range(len(pessoas)):
+    if c == 0:
+        mais_pesado = mais_leve = pessoas[c][1]
+    elif pessoas[c][1] > mais_pesado:
+        mais_pesado = pessoas[c][1]
+    elif pessoas[c][1] < mais_leve:
+        mais_leve = pessoas[c][1]
+
 print(pessoas)
-print(f"Ao todo você cadastrou {cont} pessoas.")
-print(f"O maior peso foi de {mais_pesado}kg. Peso de {nome_pesado}.")
-print(f"O menor peso foi de {mais_leve}kg. Peso de .")
+print(f"mais pesado tem {mais_pesado} kilos")
+print(f"mais leve tem {mais_leve} kilos")
