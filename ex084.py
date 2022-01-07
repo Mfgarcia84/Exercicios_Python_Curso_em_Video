@@ -10,7 +10,7 @@ pessoas = list()
 cont = 0
 while True:
     dados.append(str(input('Nome: ')))
-    dados.append(int(input('Peso: ')))
+    dados.append(float(input('Peso: ')))
     cont = cont + 1
     reposta = ' '
     pessoas.append(dados[:])
@@ -35,10 +35,14 @@ for c in range(len(pessoas)):
                 nome_mais_pesado.append(pessoas[c][0])
             else:
                 nome_mais_pesado.append(pessoas[c][0])
-        elif pessoas[c][1] < menor_peso:
-            menor_peso = pessoas[c][1]
-            nome_mais_leve.clear()
-            nome_mais_leve.append(pessoas[c][0])
+        elif pessoas[c][1] <= menor_peso:
+            if pessoas[c][1] < menor_peso:
+                menor_peso = pessoas[c][1]
+                nome_mais_leve.clear()
+                nome_mais_leve.append(pessoas[c][0])
+            else:
+                nome_mais_leve.append(pessoas[c][0])
+
 
 print(f'Você cadastrou {len(pessoas)} pessoas.')
 print(f'maior peso é {maior_peso}: {nome_mais_pesado}')
