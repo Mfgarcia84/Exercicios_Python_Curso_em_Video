@@ -7,11 +7,15 @@ c) uma listagem com as pessoas mais leves
 
 dados = list()
 pessoas = list()
-cont = 0
 while True:
     dados.append(str(input('Nome: ')))
     dados.append(float(input('Peso: ')))
-    cont = cont + 1
+    if len(pessoas) == 0: #o if entra aqui porque essa posição é a primeira evidência do peso.
+        maior = menor = dados[1]
+    elif dados[1] > maior:
+        maior = dados[1]
+    elif dados[1] < menor:
+        menor = dados[1]
     reposta = ' '
     pessoas.append(dados[:])
     dados.clear()
@@ -20,7 +24,20 @@ while True:
     if reposta == 'N':
         break
 print(pessoas)
-nome_mais_pesado = list()
+print(f'Você cadastrou {len(pessoas)} pessoas.')
+print(f'O maior peso cadastrado foi {maior}: ',end='')
+for c in pessoas:
+    if c[1] == maior:
+        print(f'[{c[0]}]',end='')
+print(f'\nO menor peso cadastrado foi {menor}: ', end='')
+for c in pessoas:
+    if c[1] == menor:
+        print(f'[{c[0]}]', end='')
+
+
+
+#minha solução
+'''nome_mais_pesado = list()
 nome_mais_leve = list()
 for c in range(len(pessoas)):
     if c == 0:
@@ -46,5 +63,5 @@ for c in range(len(pessoas)):
 
 print(f'Você cadastrou {len(pessoas)} pessoas.')
 print(f'maior peso é {maior_peso}: {nome_mais_pesado}')
-print(f'menor peso é {menor_peso}: {nome_mais_leve}')
+print(f'menor peso é {menor_peso}: {nome_mais_leve}')'''
 
