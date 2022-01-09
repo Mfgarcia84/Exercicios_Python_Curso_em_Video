@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5e0dd7a-2875-49a6-9f0e-c6038eea42ff" name="Changes" comment="Update_07012022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/aulas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex088.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex088.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex089.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex089.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testes.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +48,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.ex089">
+  <component name="RunManager" selected="Python.testes">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex089" />
         <item itemvalue="Python.testes" />
+        <item itemvalue="Python.ex089" />
         <item itemvalue="Python.aulas" />
         <item itemvalue="Python.ex087" />
         <item itemvalue="Python.ex086" />
