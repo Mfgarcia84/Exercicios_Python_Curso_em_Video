@@ -38,17 +38,17 @@ print(list(pares))"""
 
 # unpacking
 
-"""par = (0, 'Marcelo') #tupla com dois elementos
+'''par = (0, 'Marcelo') #tupla com dois elementos
 posicao = par[0] #quebra a tupla 'par' em duas variáveis (posicao e nome)
 nome = par[1] #quebra a tupla 'par' em duas variáveis (posicao e nome)
-print(posicao, nome)
+print(posicao, nome)'''
 
-posicao, nome = par # mesma resultado do código acima. A posicao recebe o objeto do indice 0 de par e nome recebe o objeto do indice 1 de par
+'''posicao, nome = par # mesma resultado do código acima. A posicao recebe o objeto do indice 0 de par e nome recebe o objeto do indice 1 de par
 print(posicao, nome)"""
 
 """comidas = ('Refrigerante', 'Macarronada', 'Suco', 'Bolo')
 print(comidas)
-var = enumerate(comidas, start=1) #gera tuplas enumeradas dentro de tupas
+var = enumerate(comidas, start=1) #gera tuplas enumeradas dentro de listas
 lista = list(var)
 print(lista)
 for a, b in enumerate(comidas, start=1):
@@ -89,20 +89,20 @@ print(galera)
 galera.append(teste[:])
 print(galera)"""
 
-galera = list()
+'''galera = list()
 dado = list()
 for c in range(3):
     dado.append(str(input("Nome: ")))
     dado.append(int(input("Idade: ")))
     galera.append(dado[:])  # cópia de dado
     dado.clear()
-print(galera)
+print(galera)'''
 
-for p in galera:
+'''for p in galera:
     if p[1] > 35:
         print(f"{p[0]} tem mais de 35 anos.")
     else:
-        print(f"{p[0]} tem menos de 35 anos.")
+        print(f"{p[0]} tem menos de 35 anos.")'''
 
 
 """galera = [["marcelo", 37], ["thamiris", 34], ["renato", 35]]
