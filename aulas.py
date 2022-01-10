@@ -89,7 +89,7 @@ print(galera)
 galera.append(teste[:])
 print(galera)"""
 
-'''galera = list()
+''''''galera = list()
 dado = list()
 for c in range(3):
     dado.append(str(input("Nome: ")))
@@ -102,9 +102,11 @@ print(galera)'''
     if p[1] > 35:
         print(f"{p[0]} tem mais de 35 anos.")
     else:
-        print(f"{p[0]} tem menos de 35 anos.")'''
+        print(f"{p[0]} tem menos de 35 anos.")''''''
 
 
-"""galera = [["marcelo", 37], ["thamiris", 34], ["renato", 35]]
+''''''galera = [["marcelo", 37], ["thamiris", 34], ["renato", 35]]
 for p in range(3):
-    print(f"{galera[p][0]} tem anos {galera[p][1]} de idade.")"""
+    print(f"{galera[p][0]} tem anos {galera[p][1]} de idade.")''''''
+
+print('casa')
