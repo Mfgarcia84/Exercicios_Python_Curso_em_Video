@@ -83,5 +83,5 @@ print(f'Dicionário ordenado com base nos valores: {ordem}')
 for i in ordem:
     print(i, animais[i])'''
 
-animais = {'cachorro':20, 'gato':30, 'elefante':10}
-print(animais.items())
+animais = {'cachorro':[20,40], 'gato':30, 'elefante':10}
+print(animais['cachorro'][1])
