@@ -51,7 +51,7 @@ for k, v in pessoas.items(): #para cada key dentro de pessoas.keys(), onde pesso
     print(f'{k} = {v}')'''
 
 
-estado = {}
+'''estado = {}
 brasil = []
 for i in range(3):
     estado['uf'] = str(input('Unidade federativa: '))
@@ -60,17 +60,28 @@ for i in range(3):
 
 for e in brasil:
     for k, v in e.items():
-        print(f'O campo {k} tem valor {v}')
+        print(f'O campo {k} tem valor {v}')'''
 
 
+'''import  operator
+jogo = {'jogador1': 2, 'jogador2': 6, 'jogador3': 3, 'jogador4': 5}
+print(jogo)
+ordenar = sorted(jogo.items(), key=operator.itemgetter(1))
+print(ordenar)'''
+'''
+O jogo.items() devolve o par de elementos do dicionário de valor chave
+key=operator.itemgetter(1) especifica que a chave de comparação é o valor do dicionário
+operator.itemgetter(0) tem a chave de comparação da chave do dicionário.
+reverse=True especifica que é decrescente a comparação
+'''
 
 
+'''animais = {'cachorro':20, 'gato':30, 'elefante':10}
+print(f'Dicionário original: {animais}')
+ordem = sorted(animais, key=animais.get)
+print(f'Dicionário ordenado com base nos valores: {ordem}')
+for i in ordem:
+    print(i, animais[i])'''
 
-
-
-
-
-
-
-
-
+animais = {'cachorro':20, 'gato':30, 'elefante':10}
+print(animais.items())
