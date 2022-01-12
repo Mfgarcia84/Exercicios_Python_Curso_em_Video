@@ -85,3 +85,5 @@ for i in ordem:
 
 animais = {'cachorro':[20,40], 'gato':30, 'elefante':10}
 print(animais['cachorro'][1])
+
+print(len([1,2,3,5]))
