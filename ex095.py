@@ -30,9 +30,11 @@ for c in range(len(time)):
     print(f'{c} {time[c]["nome"]} {time[c]["gols"]} {sum(time[c]["gols"])}')
 print('-='*30)
 while True:
-    mostrar = int(input('Mostrar dados de qual jogador? '))
+    mostrar = int(input('Mostrar dados de qual jogador? (999 para parar)'))
     if mostrar == 999:
         break
+    elif mostrar >= len(time):
+        print(f'Erro! Não existe jogador com o código {mostrar}')
     else:
         for c in range(len(time)):
             if mostrar == c:
