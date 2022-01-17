@@ -23,6 +23,8 @@ while True:
     print('==' * 20)
 print(jogador)
 print(time)
+
+
 print('-='*30)
 print(f'{"cod"} {"nome":<10} {"gols":<10} {"total":<10}')
 print('-='*30)

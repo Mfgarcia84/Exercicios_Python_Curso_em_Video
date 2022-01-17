@@ -83,7 +83,41 @@ print(f'Dicionário ordenado com base nos valores: {ordem}')
 for i in ordem:
     print(i, animais[i])'''
 
-animais = {'cachorro':[20,40], 'gato':30, 'elefante':10}
+'''animais = {'cachorro':[20,40], 'gato':30, 'elefante':10}
 print(animais['cachorro'][1])
 
-print(len([1,2,3,5]))
+print(len([1,2,3,5]))'''
+
+
+#funções
+
+'''def mensagem(msg):
+    print('-'*30)
+    print(f'{msg:^30}')
+    print('-'*30)
+mensagem('Marcelo')
+'''
+
+
+'''def contador(*a):# o asterisco enpacota dentro de uma tupla as variáveis simples
+    tam = len(a)
+    print(tam)
+
+contador(3, 4, 5)
+contador(6,7,8,9,0,)'''
+
+
+
+'''def dobra(any): # a lista já é uma variável composta e enpacotada, então não precisa do asterisco para enpacotar
+    for i in any:
+        dobro = i ** 2
+        print(dobro, end=' ')
+
+
+valores = [7, 2, 5, 0, 4, 3, 1]
+dobra(valores)'''
+
+
+multiplica = lambda a, b : print(a * b)
+
+multiplica(3,5)
