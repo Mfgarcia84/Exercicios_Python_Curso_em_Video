@@ -307,6 +307,16 @@ print(f'n1 fora vale {n1}')'''
 
 fatorial(5)'''
 
-from datetime import date
+'''from datetime import date
 a = date.today().year
-print(a)
+print(a)'''
+
+'''teste = int(input('Mostrar? '))
+if teste == 1:
+    teste = True
+elif teste == 0:
+    teste = False
+print(teste)'''
+
+n = 2
+n.
