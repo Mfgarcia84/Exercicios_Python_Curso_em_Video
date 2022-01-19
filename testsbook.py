@@ -268,11 +268,45 @@ print(user_profile)'''
 itens_sanduiche = ['cebola', 'tomate', 'alface', 'bacon', 'calabresa', 'batata', 'couve', 'carne']
 fazer_sanduiche(itens_sanduiche)'''
 
+'''from time import sleep
+
+def contador(i, f, p): #para criar uma docstring da função insere aspas logo abaixo da definição
+    """
+    --> Faz uma contagem e mostra na tela
+    :param i: início da contagem
+    :param f: fim da contagem
+    :param p: passo da contagem
+    :return: sem retorno
+    """
+    for i in range(i, f+1, p):
+        print(i, end=' ')
+        sleep(0.5)
 
 
+contador(10, 100, 10)
+help(contador)'''
+
+#escopo de variáveis local e global
+'''def fun():
+    global n1 
+    n1 = 4
+    print(f'n1 dentro vale {n1}')
+
+n1 = 2
+fun()
+print(f'n1 fora vale {n1}')'''
+
+'''def fatorial(num=1):
+    n = num - 1
+    fat = num
+    while n > 0:
+        fat = fat * n
+        n = n - 1
+    print(f'fatorial de {num} é {fat}')
 
 
+fatorial(5)'''
 
-
-
-
+from datetime import date
+a = date.today().year
+print(a)
