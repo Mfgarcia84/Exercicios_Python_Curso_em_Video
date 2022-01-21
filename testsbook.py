@@ -318,5 +318,5 @@ elif teste == 0:
     teste = False
 print(teste)'''
 
-n = 2
-n.
+
+
