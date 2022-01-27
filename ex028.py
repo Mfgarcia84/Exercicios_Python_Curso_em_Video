@@ -8,7 +8,7 @@ num_comp = random.choice(seq) #retorna um elemento aleatório da lista não vazi
 #print(num_comp)
 num_user = int(input('Digite um número entre 0 e 5: '))
 print('Processando.....')
-    sleep(2) #aguarda 2 segundos até mostrar na console a próxima linha do código
+sleep(2) #aguarda 2 segundos até mostrar na console a próxima linha do código
 if num_user == num_comp:
     print('Você venceu! O número sorteado também foi {}.'.format(num_comp))
 else:
