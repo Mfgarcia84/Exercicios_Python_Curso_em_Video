@@ -7,6 +7,7 @@ import  operator
 jogadas = dict()
 from random import randint
 from time import sleep
+print('='*25)
 print('Valores sorteados:')
 jogadas['jogador1'] = randint(1,6)
 jogadas['jogador2'] = randint(1,6)
