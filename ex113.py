@@ -9,29 +9,27 @@ def leiaint(msg):
     while True:
         try:
             i = int(input(msg))
-            return i
-            break
-        except ValueError:
+        except (ValueError, TypeError):
             print("\033[0;31mErro. Por favor digite um número inteiro válido.\033[m")
         except KeyboardInterrupt:
             print("O usuário preferiu não digitar esse número")
-            i = 0
-            return i
+            return 0
             break
+        else:
+            return i
 
 def leiafloat(msg):
     while True:
         try:
             r = float(input(msg))
-            return r
-            break
-        except ValueError:
+        except (ValueError, TypeError):
             print("\033[0;31mErro. Por favor digite um número real válido.\033[m")
         except KeyboardInterrupt:
             print("O usuário preferiu não digitar esse número")
-            r = 0
-            return r
+            return 0
             break
+        else:
+            return r
 
 
 #programa principal - validação de dados com tratamento de exceção
