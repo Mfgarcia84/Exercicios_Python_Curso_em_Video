@@ -107,6 +107,36 @@ print(galera)'''
 
 ''''''galera = [["marcelo", 37], ["thamiris", 34], ["renato", 35]]
 for p in range(3):
-    print(f"{galera[p][0]} tem anos {galera[p][1]} de idade.")''''''
+    print(f"{galera[p][0]} tem anos {galera[p][1]} de idade.")'''
 
-print('casa')
+'''Exceção não é um erro de sintaxe mas sim um erro de semantica'''
+
+'''
+try:
+    operação
+except:
+    se der errado
+else:
+    se der certo
+finally:
+    vai acontecer independentemente de ter dado certo ou errado
+'''
+
+try:
+    a = int(input('número 1: '))
+    b = int(input('número 2: '))
+    r = a / b
+except ZeroDivisionError:
+    print("Não é possível dividir um número por zero")
+except ValueError:
+    print("O número digitado não é um número válido")
+except KeyboardInterrupt:
+    print("O usuário optou por encerrar o programa")
+except Exception as erro:
+    print(f"O erro encontrado foi: {erro.__class__}")
+else:
+    print(f'{a} dividido por {b} é igual a {r:.1f}')
+finally:
+    print('Muito obrigado, volte sempre!')
+
+

@@ -35,6 +35,6 @@ def leiaInt(texto):
             break
     return valor
 
-
+#Programa principal
 n = leiaInt('Digite um número: ')
 print(f'Você acabou de digitar o número {n}')
